@@ -1,0 +1,40 @@
+# Snapshot data is a real credit union site shared for this event only: never commit it
+snapshots/*/
+snapshots_zip/
+
+__pycache__/
+*.pyc
+.venv/
+.env
+.cache/
+.DS_Store
+
+# Event data archives: never commit
+*.zip
+results/
+results_*/
+
+# Regenerable from the snapshots (python dev/gen_eval.py); holds values copied from the site
+dev/gen_eval.jsonl
+dev/*.log
+# Event material, supplied by the organisers
+Knowledge-Hackathon-Assignment.pdf
+dev/llm_eval.jsonl
+dev/.llmgen_cache/
+dev/gen_more.jsonl
+
+# subagent-generated eval sets and notes (quote site text: never commit)
+dev/agent_eval/
+dev/learnings/
+dev/agent_eval_all.jsonl
+
+# Local tooling and planning notes: not part of the submission
+.claude/
+REQUIREMENTS_AND_PLAN.md
+
+# One-off experiments that need uncommitted local caches
+dev/llm_gen_eval.py
+dev/faq_eval.py
+dev/ltr.py
+dev/prose_diag.py
+dev/ctx_diag.py

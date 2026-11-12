@@ -1,0 +1,5 @@
+# Optional: the solution runs on the Python standard library alone; this only adds faster typo matching.
+rapidfuzz==3.14.6
+# Optional, off by default (enable with KB_EMBED=1): local ONNX embeddings. It lowered accuracy on the
+# practice set and makes ingest take ~25 minutes on a laptop CPU, so it is not installed by default.
+# fastembed==0.9.1
